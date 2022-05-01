@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tp/Item.dart';
+import 'package:tp/item.dart';
 
 class ChoiceItems extends StatelessWidget {
   final Item myItem;
@@ -19,6 +19,7 @@ class ChoiceItems extends StatelessWidget {
         height: 20,
         child: Text(
           myItem.title,
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
             fontSize: 15,
@@ -27,7 +28,7 @@ class ChoiceItems extends StatelessWidget {
         decoration: BoxDecoration(
             color: Colors.orange,
             borderRadius: BorderRadius.all(
-              Radius.circular(25.0),
+              Radius.circular(15.0),
             )),
       ),
     );
