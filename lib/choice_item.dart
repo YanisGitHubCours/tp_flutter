@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tp/item.dart';
+
 
 class ChoiceItems extends StatelessWidget {
-  final Item myItem;
+  final String myItem;
 
   // Require an item to create a list
   const ChoiceItems({
@@ -18,7 +18,7 @@ class ChoiceItems extends StatelessWidget {
         width: 60,
         height: 20,
         child: Text(
-          myItem.title,
+          myItem,
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
@@ -26,7 +26,7 @@ class ChoiceItems extends StatelessWidget {
           ),
         ),
         decoration: BoxDecoration(
-            color: Colors.orange,
+            color: Colors.blue,
             borderRadius: BorderRadius.all(
               Radius.circular(15.0),
             )),
